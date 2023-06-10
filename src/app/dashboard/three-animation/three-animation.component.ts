@@ -14,7 +14,7 @@ export class ThreeAnimationComponent {
 
     const material = new THREE.MeshToonMaterial();
 
-    const ambientLight = new THREE.AmbientLight(0x000000, 0.5);
+    const ambientLight = new THREE.AmbientLight(0x009999, 0.5);
     scene.add(ambientLight);
 
     const light = new THREE.PointLight(0x000000, 0.5);
