@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
+import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,12 @@ import { MatButtonModule } from '@angular/material/button';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     MatCardModule,
+    MatInputModule,
     MatButtonModule,
-    BrowserAnimationsModule
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

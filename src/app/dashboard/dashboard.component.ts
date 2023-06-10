@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Post } from '../../models/Post';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  title: string = '';
+  username: string = '';
+  message: string = '';
+  posts: Post[] = [];
+  constructor() {}
 
+  post() {
+    this.posts.push(new Post(this.title, this.username, this.message));
+  }
   ngOnInit(): void {
   }
 

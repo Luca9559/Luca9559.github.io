@@ -1,4 +1,25 @@
 .main-box {
   display: flex;
   justify-content: center;
+  gap: 10px;
+  height: 100%;
+}
+
+.dashboard-card {
+  width: 50%;
+}
+
+.posts {
+  color: grey;
+  font-family: Tahoma, serif;
+}
+
+.post-area {
+  background-color: cadetblue;
+  width: 20%;
+  max-height: 50%;
+}
+
+.message {
+  width: 100%;
 }
