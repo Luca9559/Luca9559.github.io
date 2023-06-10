@@ -1,12 +1,20 @@
 .main-box {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
   gap: 10px;
-  height: 100%;
+}
+
+.no-posts {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .dashboard-card {
   width: 50%;
+  min-height: 100px;
 }
 
 .posts {
@@ -14,12 +22,29 @@
   font-family: Tahoma, serif;
 }
 
+.post-button {
+  background-color: darkorchid;
+}
+
 .post-area {
+  position: sticky;
+  align-self: flex-start;
   background-color: cadetblue;
   width: 20%;
+  min-width: 250px;
   max-height: 50%;
 }
 
 .message {
   width: 100%;
+}
+
+.user {
+  font-size: 13px;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
